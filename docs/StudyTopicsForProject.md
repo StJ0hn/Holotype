@@ -8,18 +8,18 @@
 ### Fazer
 
 **JavaScript Fundamentals**
-- Variables
-- Data types
-- Type Conversions
-- Basic operators, maths
+- Variables - Completed
+- Data types - Completed
+- Type Conversions - Completed
+- Basic operators, maths - Completed
 - Comparisons
-- Conditional branching: if, '?'
+- Conditional branching: if, '?' - Completed
 - Logical operators
-- Nullish coalescing operator '??'
-- Loops: while and for
-- Functions
-- Function expressions
-- Arrow functions, the basics
+- Nullish coalescing operator '??' - Completed
+- Loops: while and for - Completed
+- Functions - Completed
+- Function expressions - Completed
+- Arrow functions, the basics - Completed
 
 **Objects: the basics**
 - Objects
