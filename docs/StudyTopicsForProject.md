@@ -1,20 +1,20 @@
-# Holotype — Tópicos Exatos por Fonte
+# Holotype
 
 ---
 
 ## 1. JavaScript
-**Fonte:** javascript.info
+**Source:** javascript.info
 
-### Fazer
+### To-do
 
 **JavaScript Fundamentals**
 - Variables - Completed
 - Data types - Completed
 - Type Conversions - Completed
 - Basic operators, maths - Completed
-- Comparisons
+- Comparisons - Completed
 - Conditional branching: if, '?' - Completed
-- Logical operators
+- Logical operators - Completed
 - Nullish coalescing operator '??' - Completed
 - Loops: while and for - Completed
 - Functions - Completed
@@ -60,22 +60,22 @@
 **Network requests**
 - Fetch
 
-### Pular inteiramente
-- Code quality (exceto Coding Style — vale 10 min)
+### Out-of-scope Concepts
+- Code quality
 - Object properties configuration
 - Prototypes, inheritance
 - Classes
 - Generators, advanced iteration
 - Miscellaneous
-- Part 2 — Browser inteiro (DOM, Events, UI)
+- Part 2 — Browser (DOM, Events, UI)
 - Frames and windows, Binary data, Storing data, Animation, Web components, Regular expressions
 
 ---
 
 ## 2. Node.js
-**Fonte:** nodejs.org/learn
+**Source:** nodejs.org/learn
 
-### Fazer
+### To-Do
 
 **Getting Started**
 - Introduction to Node.js
@@ -99,7 +99,7 @@
 - Introduction to TypeScript
 - Running TypeScript code using transpilation
 
-### Pular
+### Out-of-scope Concepts
 - V8 JavaScript Engine (detalhe interno, não necessário agora)
 - Debugging, Profiling, WebAssembly, Security Best Practices
 - HTTP (Anatomy of an HTTP Transaction) — Nest abstrai isso
@@ -110,9 +110,9 @@
 ---
 
 ## 3. TypeScript
-**Fonte:** typescriptlang.org → Handbook
+**Source:** typescriptlang.org → Handbook
 
-### Fazer
+### To-Do
 
 **Get Started**
 - TypeScript for Java/C# Programmers ⚠️ esse especificamente — feito pra quem vem de OOP
@@ -132,7 +132,7 @@
 - Decorators
 - Type Inference
 
-### Pular
+### Out-of-scope Concepts
 - Keyof Type Operator
 - Typeof Type Operator
 - Indexed Access Types
@@ -147,15 +147,15 @@
 ---
 
 ## 4. Prisma
-**Fonte:** prisma.io/docs
+**Source:** prisma.io/docs
 
-### Fazer
+### To-Do
 
 **Getting Started**
-- Quickstart (com PostgreSQL local — não Prisma Postgres cloud)
+- Quickstart 
 
 **ORM → Prisma Schema**
-- Overview (o que é o schema.prisma)
+- Overview (whats is schema.prisma)
 - Data Sources
 - Generators
 - Data Model → Models
@@ -172,32 +172,32 @@
 - Filtering e sorting
 - Pagination
 
-### Pular
-- Prisma Postgres (serviço cloud — você vai usar Docker local)
+### Out-of-scope Concepts
+- Prisma Postgres 
 - Prisma Compute (deploy cloud)
-- Prisma Studio (visual editor — útil depois, não agora)
-- Prisma Accelerate, Pulse (recursos avançados/pagos)
+- Prisma Studio 
+- Prisma Accelerate, Pulse 
 - Multi-schema, introspection, MongoDB
-- Prisma Next (Early Access, instável)
+- Prisma Next 
 
 ---
 
 ## 5. Docker
-**Fonte:** docs.docker.com/get-started
+**Source:** docs.docker.com/get-started
 
-### Fazer
+### To-Do
 
 **Get Started**
-- Part 1: Getting started (o que é Docker, imagem vs container)
-- Part 2: Containerize an application (Dockerfile básico — só pra entender o conceito)
-- Part 5: Persist the DB (volumes) ⚠️ essencial pro Postgres
+- Part 1: Getting started (image vs container)
+- Part 2: Containerize an application (Basic Dockerfile)
+- Part 5: Persist the DB 
 
 **Compose**
 - Docker Compose overview
 - How Compose works
-- Compose file reference (só as chaves que você vai usar: `image`, `ports`, `environment`, `volumes`)
+- Compose file reference (`image`, `ports`, `environment`, `volumes`)
 
-### Na prática — o que você vai escrever:
+### In-Practice:
 ```yaml
 services:
   postgres:
@@ -215,38 +215,38 @@ volumes:
   postgres_data:
 ```
 
-### Pular
+### Out-of-scope Concepts
 - Part 3: Share the application (Docker Hub)
 - Part 4: Multi-container apps com networking avançado
 - Part 6: Multi-stage builds
 - Part 7: Deploy to cloud
 - Docker Swarm, Kubernetes
-- Dockerfile da aplicação Nest (deixa pra deploy futuro)
+- Dockerfile da aplicação Nest 
 
 ---
 
 ## 6. Nest.js
-**Fonte:** docs.nestjs.com
+**Source:** docs.nestjs.com
 
-### Fazer (na ordem da doc)
+### To-Do
 
 **Introduction**
-- Introduction (o que é Nest, comparação com Express)
+- Introduction 
 
 **Overview**
-- First Steps ⚠️ (estrutura de projeto, CLI, `nest new`)
+- First Steps ⚠️ (project structure, CLI, `nest new`)
 - Controllers ⚠️
 - Providers ⚠️
 - Modules ⚠️
 - Middleware
 - Exception Filters ⚠️
-- Pipes (validação com `class-validator`) ⚠️
+- Pipes (validation with `class-validator`) ⚠️
 - Guards ⚠️
 
 **Techniques**
-- Database (seção Prisma) ⚠️ essencial
+- Database (Prisma section) ⚠️ 
 - Validation (`class-validator`, `class-transformer`)
-- Configuration (`@nestjs/config`, variáveis de ambiente)
+- Configuration (`@nestjs/config`, enviroment variables)
 
 **Security**
 - Authentication (JWT + Passport) ⚠️
@@ -257,51 +257,51 @@ volumes:
 - Types and Parameters
 - Operations
 
-### Pular
-- Interceptors, Custom Decorators (avançado — aprende depois)
-- Microservices (fora do escopo)
-- GraphQL (fora do escopo)
-- WebSockets (fora do escopo)
-- CLI (além do `nest new` e `nest generate`)
-- CQRS, Event Sourcing (padrões avançados)
-- Serve Static, HTTP Module (não necessário pro MVP)
-- Testing (deixa pra depois)
+### Out-of-scope Concepts
+- Interceptors, Custom Decorators 
+- Microservices
+- GraphQL
+- WebSockets
+- CLI 
+- CQRS, Event Sourcing 
+- Serve Static, HTTP Module 
+- Testing 
 
 ---
 
 ## 7. JWT
-**Fonte:** docs.nestjs.com → Security → Authentication
+**Source:** docs.nestjs.com → Security → Authentication
 
-### Fazer (dentro da doc do Nest)
-- Authentication (página completa — é um único guia longo)
+### To-Do
+- Authentication (complete guide)
   - Implementing Passport local strategy
   - JWT functionality
   - Implementing Passport JWT strategy
   - Enable authentication globally
   - @UseGuards decorator
 
-*Opcional: jwt.io/introduction — 10 min pra entender a estrutura header.payload.signature antes de implementar*
+*Optional: jwt.io/introduction*
 
-### Pular
-- OAuth2 (complexidade desnecessária pro MVP)
-- Session-based auth (você vai usar JWT, não sessions)
+### Out-of-scope Concepts
+- OAuth2 
+- Session-based auth
 
 ---
 
 ## 8. Swagger
-**Fonte:** docs.nestjs.com → OpenAPI
+**Source:** docs.nestjs.com → OpenAPI
 
-### Fazer
+### To-Do
 - Introduction (setup do SwaggerModule)
 - Types and Parameters (`@ApiProperty` nos DTOs)
 - Operations (`@ApiOperation`, `@ApiResponse`)
 - Tags (`@ApiTags` nos controllers)
-- Security (documentar os endpoints protegidos por JWT)
+- Security (document protected endpoints by JWT)
 
-### Pular
+### Out-of-scope Concepts
 - CLI Plugin (automação avançada)
 - Mapped Types (avançado)
-- Decorators (referência completa — consulta pontual quando precisar)
+- Decorators 
 - Other features (migration guide, etc.)
 
 ---
@@ -309,11 +309,11 @@ volumes:
 ## 9. React + Vite
 **Fonte:** react.dev
 
-### Fazer
+### To-Do
 
 **Learn React**
 - Quick Start ⚠️
-- Thinking in React ⚠️ (lê antes de qualquer outra coisa — muda o mindset)
+- Thinking in React ⚠️ 
 
 **Describing the UI**
 - Your First Component
@@ -322,7 +322,7 @@ volumes:
 - JavaScript in JSX with Curly Braces
 - Passing Props to a Component
 - Conditional Rendering
-- Rendering Lists ⚠️ (listas e `key`)
+- Rendering Lists ⚠️ (lists and `key`)
 - Keeping Components Pure
 
 **Adding Interactivity**
@@ -339,31 +339,31 @@ volumes:
 
 **Escape Hatches**
 - Referencing Values with Refs
-- Synchronizing with Effects ⚠️ (`useEffect` e data fetching)
-- You Might Not Need an Effect (lê esse — evita erro clássico)
+- Synchronizing with Effects ⚠️ (`useEffect` and data fetching)
+- You Might Not Need an Effect 
 - Fetching Data ⚠️
 
 **Vite**
-- Não tem página dedicada para estudar — só rodar `npm create vite@latest` e seguir o template React + TypeScript. A doc do Vite (vitejs.dev) é referência de consulta, não de estudo.
+- There isn't a dedicated page for studying it—just run `npm create vite@latest` and follow the React + TypeScript template. The Vite documentation (vitejs.dev) is a reference for looking things up, not for studying.
 
-### Pular
-- `useReducer`, `useContext` (state management avançado — entra quando o projeto crescer)
-- `useMemo`, `useCallback` (otimização prematura)
-- Custom Hooks (depois que os hooks básicos estiverem confortáveis)
-- APIs de servidor (SSR, Server Components — Next.js territory)
+### Out-of-Scope Concepts
+- `useReducer`, `useContext` (advanced state management)
+- `useMemo`, `useCallback` 
+- Custom Hooks (once you are comfortable with the basic hooks)
+- Servers APIs (SSR, Server Components — Next.js territory)
 - Legacy APIs (class components, etc.)
 
 ---
 
-## Ordem de estudo
+## Study Order
 
-| Etapa | Tecnologia | Observação |
+| Stage | Technology | Note |
 |---|---|---|
-| 1 | JavaScript | Base da linguagem |
+| 1 | JavaScript | Language foundation |
 | 2 | Node.js | Runtime |
-| 3 | TypeScript | Tipagem sobre JS |
-| 4 | Prisma + Docker | Em paralelo — Docker sobe o banco que o Prisma precisa |
-| 5 | Nest.js | Consome Prisma, usa TS |
-| 6 | JWT | Depois do CRUD básico funcionar |
-| 7 | Swagger | Rotas estáveis antes de documentar |
-| 8 | React + Vite | Entra quando o 1º endpoint da API estiver de pé |
+| 3 | TypeScript | Typing layer over JS |
+| 4 | Prisma + Docker | Parallel — Docker spins up the database Prisma needs |
+| 5 | Nest.js | Consumes Prisma, uses TS |
+| 6 | JWT | After basic CRUD is working |
+| 7 | Swagger | Stable routes before documenting |
+| 8 | React + Vite | Introduced once the first API endpoint is up |
