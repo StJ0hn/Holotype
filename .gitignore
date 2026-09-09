@@ -1,4 +1,9 @@
 .gitignore
 LICENSE
 .env
-SOUL.MD
+SOUL.md
+AGENTS.md
+DREAMS.md
+IDENTITY.md
+USER.md
+/memory
