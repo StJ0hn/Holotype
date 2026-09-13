@@ -25,3 +25,6 @@
 - **BR01:** Only authenticated users with the "Curator" role are permitted to write, update, and delete data in the species catalog.
 - **BR02:** Regular users (unauthenticated) only have read-only access to the catalog and the news feed.
 - **BR03:** Registered data must adhere to the scientific accuracy of the Mesozoic Era (Triassic, Jurassic, Cretaceous).
+
+## Observations
+The visual aesthetic of Holotype will be based on flat illustrations and silhouettes (Bluefin OS style), avoiding 3D hyper-realism. The goal is to convey the feel of a modern scientific field guide while maintaining a lightweight interface focused on taxonomic data.
