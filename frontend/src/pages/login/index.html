@@ -1,19 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holotype</title>
-    <link rel="stylesheet" href="./login.module.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holotype | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="id-container">
-        <div class="id-form">
-            <h2 id="login-text">Welcome to Holotype!</h2>
-            <input type="text" id="username" name="username" placeholder="Username">
-            <input type="password" id="password" name="password" placeholder="Password">
-            <button type="submit" id="login-button">Login</button>
-        </div>
-    <main/>
+  <header class="topo">
+    <div class="marca">
+      <img src="assets/logo.png" alt="" width="90">
+      <div>
+        <strong>HOLOTYPE</strong>
+        <span>CATÁLOGO DE DINOSSAUROS</span>
+      </div>
+    </div>
+    <p class="slogan">EXPLORANDO O PASSADO<br>PARA ENTENDER O PRESENTE</p>
+  </header>
+
+  <main>
+    <section class="card chanfro">
+      <div class="card__conteudo chanfro">
+        <img src="assets/logo.png" alt="" width="60">
+        <h1>Bem-vindo(a)</h1>
+        <p class="subtitulo">Acesse o catálogo de dinossauros e explore espécies, fósseis e informações científicas.</p>
+
+        <form id="login-form" novalidate>
+          <div class="campo">
+            <label for="usuario">Usuário</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+            <input id="usuario" name="usuario" type="text" placeholder="Usuário" autocomplete="username" required>
+          </div>
+
+          <div class="campo">
+            <label for="senha">Senha</label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            <input id="senha" name="senha" type="password" placeholder="Senha" autocomplete="current-password" required>
+          </div>
+
+          <button type="submit" id="botao">Entrar →</button>
+          <p id="erro" role="alert"></p>
+          <div class="separador">
+            <a href="cadastro.html">Criar conta</a>
+          </div>
+          <p class="aviso">Ainda não tem uma conta? Entre em contato com o administrador.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>HOLOTYPE v1.0.0<br></p>
+    <p>CIÊNCIA / EVOLUÇÃO / CONHECIMENTO</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
